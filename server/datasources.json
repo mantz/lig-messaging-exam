@@ -2,5 +2,16 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "mongodb": {
+    "host": "ds157276.mlab.com",
+    "port": 57276,
+    "url": "",
+    "database": "heroku_gkxxq84h",
+    "password": "wjHihAWsy7UddAf",
+    "name": "mongodb",
+    "user": "lig",
+    "useNewUrlParser": true,
+    "connector": "mongodb"
   }
 }
