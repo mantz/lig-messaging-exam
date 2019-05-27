@@ -1,0 +1,17 @@
+.message-compose {
+
+    &__form {
+        display: flex;
+        padding: 10px;
+    }
+
+    &__input {
+        flex: 1;
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    &__button {
+        margin: 0;
+    }
+}

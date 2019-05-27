@@ -1,0 +1,15 @@
+<app-page-title (headerHeightReporter)="receivedHeaderHeightHandler($event)">
+  <button class="form__button form__button--dark form__button--pull-right" (click)="logOut()">Log out</button>
+</app-page-title>
+
+<app-page-content>
+  <div class="messages__holder general__padding--5" [style.height]="computeRemainingHeight()+'px'" #autoScrollToBottom (scroll)="onScroll()">
+    <div *ngFor="let messageObj of messagesObj">
+      <app-msg-bubble [messageObj]="messageObj" [isMsgFromMe]="isMsgFromMe(messageObj)"></app-msg-bubble>
+    </div>
+  </div>
+</app-page-content>
+
+<app-page-footer [fixedAtBottom]="true">
+  <app-msg-compose (newMsgEvent)="newMsgEventHandler($event)" (elemHeightReporter)="receivedFooterHeightHandler($event)"></app-msg-compose>
+</app-page-footer>

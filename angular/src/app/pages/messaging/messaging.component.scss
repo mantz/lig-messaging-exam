@@ -1,0 +1,9 @@
+.messages {
+
+    &__holder {
+        scroll-behavior: smooth;
+        position: relative;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+}

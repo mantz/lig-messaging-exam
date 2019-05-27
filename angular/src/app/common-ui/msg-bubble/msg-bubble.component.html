@@ -1,0 +1,9 @@
+<div class="single-message__holder">
+    <div [ngClass]="{
+        'single-message__align--right': isMsgFromMe,
+        'single-message__align--left': !isMsgFromMe
+    }">
+        <div class="single-message__content">{{ messageObj.content }}</div>
+        <div class="single-message__sender">{{ isMsgFromMe? 'You' : messageObj.senderName }}</div>
+    </div>
+</div>

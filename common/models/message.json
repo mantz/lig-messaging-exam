@@ -11,6 +11,10 @@
       "type": "string",
       "required": true
     },
+    "senderId": {
+      "type": "string",
+      "required": true
+    },
     "senderName": {
       "type": "string",
       "required": true

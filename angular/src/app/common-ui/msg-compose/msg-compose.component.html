@@ -1,0 +1,6 @@
+<div class="message-compose__holder" #computeHeight>
+  <form (ngSubmit)="sendMessage()" class="message-compose__form">
+      <input type="text" name="message" [(ngModel)]="newMessage" placeholder="Start a new message" class="form__input message-compose__input">
+      <button class="form__button form__button--dark form__button--pull-right message-compose__button">send</button>
+  </form>
+</div>

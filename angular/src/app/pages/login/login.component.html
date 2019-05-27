@@ -1,0 +1,15 @@
+<app-page-title></app-page-title>
+
+<app-page-content>
+  <div class="general__padding--10">
+      <form (ngSubmit)="submitForm()">
+          <fieldset>
+            <input class="form__input" [(ngModel)]="credentials.username" name="username" type="text" placeholder="User name" (focus)="changeFormError()">
+            <input class="form__input" [(ngModel)]="credentials.password" name="password" type="password" placeholder="password" (focus)="changeFormError()">
+            <div [ngClass]="{form__errors: submitError}">{{ submitError }}</div>
+            <button class="form__button">Sign up / Log in</button>
+          </fieldset>
+          <p class="form__extra-text">By signing up, you agree to the Terms of Service and Privacy Policy, including Cookie Use. Others will be able to find you by searching for your email address or phone number when provided.</p>
+        </form>
+  </div>
+</app-page-content>
